@@ -1,5 +1,5 @@
 import { StudentContext } from "./StudentContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
 function Student() {
-  const { student, setstudent, favourite, setfavourite } =
+  const { student, favourite, setfavourite } =
     useContext(StudentContext);
 
   function addfavourite(removeid) {
